@@ -8782,9 +8782,9 @@ section.u-image:not(.u-hover-box),
   flex: 21 0 auto;
 }
 .u-layout-row > .u-size-20 {
-  flex: 0 0 33.33333333%;
-  max-width: 33.33333333%;
-  min-width: 33.33333333%;
+  flex: 0 0 25%;
+  max-width: 25%;
+  min-width: 25%;
 }
 .u-layout-col > .u-size-20 {
   flex: 20 0 auto;
@@ -44181,6 +44181,8 @@ a.u-link.u-text-hover-grey-90:hover {
 
  .u-footer {
   background-image: none;
+  background-color: #a8a8a8 !important;
+color:#444444;
 }
 
 .u-footer .u-sheet-1 {
@@ -44235,6 +44237,11 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 }
 
+.footer-background
+{
+background-color: #a8a8a8 !important;
+color:#343434;
+}
 
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #fff;">
+  <head>
+   
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+<style id="compiled-css" type="text/css">
+    /* Slider */
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.logo-carousel {
+  overflow: inherit;
+  *border-top: 1px solid #353535;
+  *border-bottom: 1px solid #353535;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-track::before,
+.slick-track::after {
+  display: table;
+  content: '';
+}
+
+.slick-track::after {
+  clear: both;
+}
+
+.slick-track {
+  padding: 1rem 0;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  background: url(https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/arrow.svg?sanitize=true) center no-repeat;
+  color: #fff;
+  filter: invert(77%) sepia(32%) saturate(1%) hue-rotate(344deg) brightness(105%) contrast(103%);
+  border: none;
+  width: 2rem;
+  height: 1.5rem;
+  text-indent: -10000px;
+  margin-top: -16px;
+  z-index: 99;
+}
+
+.slick-arrow.slick-next {
+  right: -40px;
+  transform: rotate(180deg);
+}
+
+.slick-arrow.slick-prev {
+  left: -40px;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .slick-arrow {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+body {
+    background-color: #fff;
+  }
+  
+.row {
+  overflow: hidden;
+}  
+
+/* JsFiddle Example only/don't use */
+.logo-carousel {
+  margin-top: 0px;
+}
+
+
+    /* EOS */
+  </style>
+
+  </head>
+  <body>
+		
+	
+
+
+    <section class="logo-carousel slider" data-arrows="true">
+      <div class="slide"><img src="images/empresas/logo-agencia-argentina-inversiones.jpg"></div>
+      <div class="slide"><img src="images/empresas/logo-agro-primus.jpg"></div>
+	  <div class="slide"><img src="images/empresas/logo-agrosud.jpg"></div>
+	  <div class="slide"><img src="images/empresas/logo-faraday.jpg"></div>
+	  <div class="slide"><img src="images/empresas/logo-induvia.jpg"></div>
+	  <div class="slide"><img src="images/empresas/logo-inlingua.jpg"></div>
+	  <div class="slide"><img src="images/empresas/logo-kpmg.jpg"></div>	  
+	  <div class="slide"><img src="images/empresas/logo-melectric.jpg"></div>	  
+      <div class="slide"><img src="images/empresas/logo-ministerio-transporte.jpg"></div>	  
+	  <div class="slide"><img src="images/empresas/logo-psicoanalitica.jpg"></div>
+	  <div class="slide"><img src="images/empresas/logo-salesforce.jpg"></div>
+	  
+	  <div class="slide"><img src="images/empresas/logo-truenorth.jpg"></div>
+	  <div class="slide"><img src="images/empresas/logo-tzedaka.jpg"></div>
+	  <div class="slide"><img src="images/empresas/logo-ubatec.jpg"></div>
+	  <div class="slide"><img src="images/empresas/logo-unicef.jpg"></div>
+	  <div class="slide"><img src="images/empresas/logo-unlz.jpg"></div>
+	  
+    </section>
+
+
+
+<script type="text/javascript">//<![CDATA[
+
+
+$(document).ready(function() {
+  $('.logo-carousel').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    arrows: true,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 4
+      }
+    }, {
+      breakpoint: 520,
+      settings: {
+        slidesToShow: 2
+      }
+    }]
+  });
+});
+
+
+
+  //]]></script>
+
+
+
+
+ 
+  </body>
+</html>
